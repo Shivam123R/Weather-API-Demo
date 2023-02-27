@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/29f04b339b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="title">Check Location Weather</h1>
+            <div class="main-window">
+                <div id="return-info" class="return-info">
+                    <div id="loading" class="loading">
+                        <span id="loader-1" class="loader-1"></span>
+                        <span id="loader-1" class="loader-1"></span>
+                        <span id="loader-1" class="loader-1"></span>
+                        <span id="loader-1" class="loader-1"></span>
+                    </div>
+                    <p id="error-msg" class="error-msg">Couldn't able to fetch your location, Please try again.</p>
+                </div>
+                <div id="get-info" class="get-info">
+                    <div class="input-data" id="input-data">
+                        <label for="get-location" class="label" id="label">Enter your Location</label>
+                        <input type="text" onfocus="on_focus()" name="get-location" id="get-location"
+                            class="input-field">
+                    </div>
+                    <button id="search-loc" class="search-btn">Search</button>
+                    <div class="or">
+                        <hr>
+                        <span>or</span>
+                        <hr>
+                    </div>
+                    <a href="#get-info" id="know-location" class="know-location">Click to get Info</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="output-window" id="output-window">
+        <div class="output">
+            <div class="close">
+                <i class="fa-regular fa-circle-xmark" id="close"></i>
+            </div>
+            <div class="temp-details">
+                <img src="#" alt="weather.png" id="img">
+                <div class="text">
+                    <p class="temp" id="temp"></p>
+                    <p class="mode" id="mode"></p>
+                </div>
+            </div>
+            <div class="loc-details">
+                <p class="loc" id="loc"></p>
+                <p class="country" id="country"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
